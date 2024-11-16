@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <title>Denis Miasnikov Frontend Engineer</title>
+    </head>
+    <body class="body">
+        <header class="header">
+            <span class="cv-name"><strong>Denis Miasnikov</strong></span>
+            <nav>
+                <ul class="navigation-list">
+                    <li class="navigation-list_item">
+                        <a href="#contacts">Contact Information</a>
+                    </li>
+                    <li class="navigation-list_item">
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="navigation-list_item">
+                        <a href="#experience">Professional Experience</a>
+                    </li>
+                    <li class="navigation-list_item">
+                        <a href="#code">Code Example</a>
+                    </li>
+                    <li class="navigation-list_item">
+                        <a href="#education">Education</a>
+                    </li>
+                    <li class="navigation-list_item">
+                        <a href="#languages">Languages</a>
+                    </li>
+                    <li class="navigation-list_item">
+                        <a href="#summary">Summary</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="section">
+                <img src="./assets/photo.jpeg" alt="ProfilePhoto" class="profile-photo"/>
+            </section>
+            <section class="section" id="contacts">
+                <h3 class="section_title">Contact Information</h3>
+                <ul class="section_content section-content">
+                    <li class="section-content_item">
+                        Email:
+                        <a href="mailto:denisreactfe@gmail.com">
+                            <strong><em>denisreactfe@gmail.com</em></strong>
+                        </a>
+                    </li>
+                    <li class="section-content_item">
+                        Phone:
+                        <a href="tel:+994(50)499-75-13">
+                            <strong><em>+994(50)499-75-13</em></strong>
+                        </a>
+                    </li>
+                    <li class="section-content_item">
+                        Telegram:
+                        <a href="mailto:denisreactfe@gmail.com">
+                            <strong><em>@denisreactfe</em></strong>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="experience">
+                <h3 class="section_title">Professional Experience</h3>
+                <section class="section_content">
+                    <section>
+                        <h4>Middle Front-end Developer</h4>
+                        <p>
+                            <span>LLC “XIMI DATA”</span> | <a href="https://www.ximi.group/product_tron" class="experience-company-link">ximi.group/product_tron</a>
+                            <br/>
+                            <span>July 2024 – Present</span> | <span>Remote</span>
+                        </p>
+                        <p>
+                            Developed a vulnerability management tool for DevSecOps processes.
+                            Led the development of an analytics dashboard for project vulnerabilities.
+                        </p>
+                        <h5>Responsibilities:</h5>
+                        <p>
+                            Developed components and features using React, RTK Query, and TypeScript.
+                            Styled UI components with SCSS (SASS), following modern design principles.
+                            Ensured code quality and consistency with ESLint and Prettier.
+                            Conducted unit and integration tests using Jest and React Testing Library.
+                            Integrated third-party libraries: Ant Design, React Router, i18next, React Lazy Load, and
+                            more.
+                        </p>
+                        <h5>Tech Stack:</h5>
+                        <p>React, TypeScript, RTK Query, SCSS, Ant Design, Jest, ESLint, Prettier, React Testing
+                            Library, react-router, i18next, date-fns.</p>
+                    </section>
+                    <section>
+                        <h4>Developer</h4>
+                        <p>
+                            <span>Joint-Stock Bank</span> | <a href="https://www.abr.ru" class="experience-company-link">abr.ru</a>
+                            <br/>
+                            <span>April 2023 – July 2024</span> | <span>Saint Petersburg, Russia</span>
+                        </p>
+                        <p>
+                            Designed and implemented a custom form builder for loan applications.
+                            Developed landing pages and set up CI/CD pipelines using GitLab and Docker.
+                        </p>
+                        <h5>Responsibilities:</h5>
+                        <p>
+                            Developed a form builder from scratch, optimizing for ease of use and scalability.
+                            Configured GitLab CI/CD, including writing Dockerfiles and Docker Compose YAML for
+                            containerization.
+                            Created a private npm registry using Nexus for secure package management.
+                            Implemented user analytics features using Chart.js and React-Chartjs-2 to track site
+                            engagement metrics.
+                            Optimized performance and scalability for large-scale web applications.
+                        </p>
+                        <h5>Tech Stack:</h5>
+                        <p>React, TypeScript, React Query, Ant Design, CSS Modules, Tailwind CSS, Styled Components,
+                            Chart.js, Jest, ESLint, Prettier, Docker, GitLab CI/CD.</p>
+                    </section>
+                </section>
+            </section>
+            <section class="section" id="skills">
+                <h3 class="section_title">Skills</h3>
+                <ul class="section_content section-content">
+                    <li class="section-content_item">
+                        <strong>Languages:</strong> JavaScript (ES6+), TypeScript, HTML5, CSS3, SCSS, JSON
+                    </li>
+                    <li class="section-content_item">
+                        <strong>Frameworks & Libraries:</strong> React, Redux, RTK Query, React Router, Axios, Styled Components, Tailwind CSS, Chart.js, react-chartjs-2
+                    </li>
+                    <li class="section-content_item">
+                        <strong>Tools & Technologies:</strong> Git, Webpack, Docker, CI/CD (GitLab), ESLint, Prettier, Jest, React Testing Library
+                    </li>
+                    <li class="section-content_item">
+                        <strong>Other:</strong> REST APIs, i18next, react-lazyload, react-hooks-form, date-fns, Nexus (private npm registry)
+                    </li>
+                </ul>
+            </section>
+            <section class="section" id="code">
+                <h3 class="section_title">Code Example</h3>
+                <pre class="section_content section-content code-content">
+                    <code class="code">
+                        const stepsSet: Set&lt;IFormStep&gt; = new Set();
+                        getValues().Step.forEach((stp, stpIdx) => {
+                          if (stpIdx !== stepIndex) stepsSet.add(stp);
+                        });
+                    </code>
+                </pre>
+            </section>
+            <section class="section" id="education">
+                <h3 class="section_title">Education</h3>
+                <p class="section_content education-content">
+                    <span><strong>Frontend Engineer (React)</strong></span>
+                    <span>Institute of Retraining and Advanced Training “VIAKADEMIA”</span>
+                    <span>Graduated: 2023</span>
+                </p>
+            </section>
+            <section class="section" id="languages">
+                <h3 class="section_title">Languages</h3>
+                <ul class="section_content section-content">
+                    <li class="section-content_item"><span>English: B2</span></li>
+                    <li class="section-content_item"><span>French: B2</span></li>
+                    <li class="section-content_item"><span>Russian: Native</span></li>
+                </ul>
+            </section>
+            <section class="section" id="summary">
+                <h3 class="section_title">Summary</h3>
+                <p class="section_content summary-content">
+                    Passionate Front-end Developer with experience in building secure, scalable, and efficient web applications.
+                    Eager to contribute to a collaborative team environment and continuously enhance my technical skills.
+                    I am motivated by challenges and strive for continuous self-improvement.
+                    Outside of work, I enjoy traveling with my family and staying active through sports.
+                </p>
+            </section>
+        </main>
+        <footer class="footer">
+            <a href="https://rs.school/courses/javascript">
+                <img
+                    src="https://raw.githubusercontent.com/rolling-scopes-school/js-fe-course-en/b920cf23482de2edaa0a25b62a0fd098eb67e91f/tasks/CV(markdown)/rs-school-logo.svg"
+                    alt="logo"
+                    height="40px"
+                    width="auto"
+                >
+            </a>
+            <span class="creation-year">2024</span>
+            <a href="https://github.com/DenisMiasnikov">
+                <img
+                    src="https://media.licdn.com/dms/image/v2/D4D12AQH5AQC9TXxYkw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1726897313436?e=2147483647&v=beta&t=jb4djqtMk72evJrNUfmpML9usqbI_OJUc2Tp3Hgx7Oc"
+                    alt="logo"
+                    height="40px"
+                    width="auto"
+                >
+            </a>
+        </footer>
+        <button class="scroll-to-top"></button>
+    </body>
+    <script src="index.js"></script>
+</html>
