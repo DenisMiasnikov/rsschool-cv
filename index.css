@@ -1,0 +1,172 @@
+@media(max-width: 964px) {
+    .navigation-list_item {
+        height: 55px;
+        align-content: center;
+    }
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.body {
+    padding: 0;
+    margin: 0;
+    background-color: #EAEAE8;
+}
+
+.header,
+.navigation-list,
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer,
+.header {
+    padding: 24px;
+    background-color: #016D94;
+}
+
+.navigation-list {
+    gap: 8px;
+}
+
+.navigation-list_item {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #EAEAE8;
+    border: 1px solid #016D94;
+}
+
+.navigation-list_item:hover {
+    background-color: #17639F;
+    border-color: #EAEAE8;
+}
+
+.navigation-list_item:hover a{
+    color: #EAEAE8;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 24px
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #17639F;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.section:nth-child(3) {
+    grid-row: span 4;
+}
+
+.section:last-child {
+    grid-column: span 2;
+}
+
+.section_title {
+    color: #EAEAE8;
+}
+
+.section_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 32px);
+    height: 100%;
+    margin: 16px;
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.section-content {
+    align-items: flex-start;
+}
+
+.section-content_item {
+    flex-grow: 1;
+    align-content: center
+}
+
+.experience-company-link {
+    color: deepskyblue;
+}
+
+.cv-name,
+.summary-content,
+.creation-year {
+    font-size: 18px;
+}
+
+.cv-name,
+.creation-year {
+    color: #faebd7;
+}
+
+.education-content,
+.code-content,
+.summary-content {
+    justify-content: center;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 116px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    border:1px solid transparent;
+    border-radius: 50%;
+    opacity: 0.75;
+}
+
+.scroll-to-top:before {
+    content: '|';
+    position: absolute;
+    transform: rotate(45deg);
+    top: 35%;
+    left: 38%;
+}
+
+.scroll-to-top:after {
+    content: '|';
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 35%;
+    right: 38%;
+}
+
+.hide {
+    display: none;
+}
+
+.profile-photo {
+    max-width: 100%;
+    max-height: 260px
+}
+
+.code {
+    white-space: normal;
+}
